@@ -1,9 +1,17 @@
 const emails = ['io@io.io', 'me@me.me', 'altro@altro.altro'];
-let usermail = prompt('Inserisci la tua email');
+const usermail = prompt('Inserisci la tua email');
+let access = false;
 
-if (usermail == emails[0] || usermail == emails[1] || usermail == emails[2]){
-    alert('email corretta');
+for (let x=0; x<emails.length; x++){
+    if (emails[x] == usermail){
+        access = true;
+    }
 }
-else{
-    alert('email non valida');
+
+if (access = true){
+    alert('welcome!');
+} else{
+    alert('access denied');
 }
+
+//emails.includes(usermail) SCORCIATOIA!
